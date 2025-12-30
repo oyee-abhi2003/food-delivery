@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './placeorder.css';
-import { StoreContext } from '../../context/storecontext';
+import { StoreContextProvider } from "./context/StoreContext.jsx";
+
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom'
 

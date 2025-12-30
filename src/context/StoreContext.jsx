@@ -9,7 +9,7 @@ const StoreContextProvider = ({ children }) => {
   const [food_list, setFoodList] = useState(foodData); // local fallback
   const [token, setToken] = useState(localStorage.getItem("token") || "");
 
-  const url = "http://localhost:4000";
+  const url = "https://food-delivery-project-iqf3.onrender.com";
 
   const addToCart = async (itemId) => {
     setCartItems((prev) => ({
