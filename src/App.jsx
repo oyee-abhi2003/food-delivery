@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/navbar/Navbar'
+
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/home/home'
 import Cart from './pages/cart/cart'
 import PlaceOrder from './pages/placeorder/placeorder'
+
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
+
 import MyOrders from './pages/MyOrders/MyOrders'
 import Verify from "./pages/Verify/Verify";
 
