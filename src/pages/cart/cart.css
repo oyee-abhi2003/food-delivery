@@ -1,0 +1,168 @@
+.cart {
+  margin-top: 100px;
+  padding: 0 7%;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ---------- HEADER ROW ---------- */
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr 1fr 1fr 0.5fr;
+  padding: 14px 20px;
+  background: #fafafa;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* ---------- ITEM CARD ---------- */
+.cart-items-item {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  background: white;
+  padding: 18px 20px;
+  border-radius: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cart-items-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.cart-items-item img {
+  width: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cart-items-item p {
+  font-size: 15px;
+  color: #333;
+}
+
+.cart-items-item .remove {
+  color: #ff4d4f;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ---------- DIVIDER ---------- */
+.cart hr {
+  display: none;
+}
+
+/* ---------- BOTTOM LAYOUT ---------- */
+.cart-bottom {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+}
+
+/* ---------- CART TOTAL CARD ---------- */
+.cart-total {
+  background: linear-gradient(135deg, #fff5f0, #ffffff);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.cart-total h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.cart-total-details b {
+  font-size: 18px;
+  color: #000;
+}
+
+/* ---------- CHECKOUT BUTTON ---------- */
+.cart-total button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, tomato, #ff6a3d);
+  border: none;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(255,99,71,0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cart-total button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(255,99,71,0.55);
+}
+
+/* ---------- PROMO CARD ---------- */
+.cart-PromoCode {
+  background: #0f0f0f;
+  color: white;
+  border-radius: 18px;
+  padding: 30px;
+  height: fit-content;
+}
+
+.cart-PromoCode p {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+.cart-PromoCode-input {
+  margin-top: 18px;
+  display: flex;
+  background: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cart-PromoCode-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 14px;
+  color: white;
+}
+
+.cart-PromoCode-input button {
+  background: tomato;
+  border: none;
+  padding: 14px 22px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .cart-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-items-title {
+    display: none;
+  }
+
+  .cart-items-item {
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
+  }
+}

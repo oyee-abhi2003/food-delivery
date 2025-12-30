@@ -1,0 +1,121 @@
+.food-item {
+  width: 280px;
+  background: linear-gradient(180deg, #ffffff, #fafafa);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.food-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 35px 90px rgba(0,0,0,0.12);
+}
+
+/* ---------- IMAGE ---------- */
+
+.food-item-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.food-item-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.food-item:hover .food-item-image {
+  transform: scale(1.12);
+}
+
+/* ---------- ADD BUTTON ---------- */
+
+.add-to-cart {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 42px;
+  padding: 8px;
+  background: linear-gradient(135deg, tomato, #ff7a4d);
+  border-radius: 50%;
+  box-shadow: 0 12px 30px rgba(255,99,71,0.45);
+  transition: transform 0.25s ease;
+}
+
+.add-to-cart:hover {
+  transform: scale(1.15) rotate(90deg);
+}
+
+/* ---------- COUNTER ---------- */
+
+.food-item-counter {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border-radius: 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.food-item-counter img {
+  width: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.food-item-counter img:hover {
+  transform: scale(1.25);
+}
+
+.food-item-counter p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ---------- INFO ---------- */
+
+.food-item-info {
+  padding: 18px 20px 22px;
+}
+
+.food-item-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-item-name-rating p {
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+}
+
+.food-item-name-rating img {
+  width: 78px;
+}
+
+.food-item-desc {
+  font-size: 13.5px;
+  color: #777;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* ---------- PRICE ---------- */
+
+.food-item-price {
+  margin-top: 14px;
+  font-size: 22px;
+  font-weight: 800;
+  background: linear-gradient(135deg, tomato, #ff6a3d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
